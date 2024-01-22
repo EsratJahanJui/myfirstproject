@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffe9;
+  overflow-x: hidden;
+}
+nav {
+  background-color: #cbcda9;
+  width: 100%;
+  height: 3.2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  padding-top: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+#bold {
+  font-weight: 600;
+}
+.flex li {
+  list-style: none;
+}
+/* first section css */
+.container {
+  display: grid;
+  place-items: center;
+  /* padding-bottom: 12rem; */
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: "Inter", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+/* second section-form */
+.second-section {
+  height: 100vh;
+}
+.container-form {
+  width: 325px;
+  padding: 50px;
+}
+.container-flex {
+  display: flex;
+  width: 800px;
+  background-color: #201f1f;
+  margin: auto;
+  border-radius: 8px;
+}
+.box-shadow {
+  box-shadow: none;
+}
+.img {
+  width: 372px;
+  background-size: cover;
+  border-top-right-radius: 5px;
+}
+.form-title {
+  color: whitesmoke;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+.red {
+  color: gray;
+  padding-bottom: 20px;
+}
+input {
+  padding: 20px;
+  background-color: #343333;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.black {
+  background-color: #343333;
+  border-radius: 3px;
+  padding: 25px;
+
+  box-shadow: none;
+}
+.btn {
+  background-color: #f3f25b;
+  padding: 10px;
+  border-style: none;
+  border-radius: 3px;
+}
+
+/* For responsive */
+/* Media Queries for Mobile */
+@media screen and (max-width: 900px) {
+  body {
+    width: 450px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+  .text {
+    width: 250px;
+    font-size: 1.2rem;
+
+    padding-bottom: 20px;
+  }
+
+  .container-flex {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0px;
+    /* margin: auto; */
+    flex-shrink: 10;
+    /* flex-wrap: wrap; */
+  }
+  .img {
+    position: relative;
+    left: 0px;
+    width: 450px;
+    background-size: cover;
+    height: 400px;
+  }
+}
